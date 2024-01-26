@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeTxt() {
+        document.getElementById("change").innerHTML =
+          "“There is no secret so close as that between a rider and his horse.” -- Robert Smith Surtees --";
+      }
+    </script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="picBtn">
+      <button
+        onclick='document.getElementById("ponies").src="images/horse-5664955_1280.jpg"'
+      >
+        Warmblood
+      </button>
+      <button
+        onclick='document.getElementById("ponies").src="images/iceland-2420768_1280.jpg"'
+      >
+        Pony
+      </button>
+      <button
+        onclick='document.getElementById("ponies").src="images/horses-g7febd857e_1280.jpg"'
+      >
+        Draft
+      </button>
+    </div>
+
+    <div class="snhBtn">
+      <button onClick='document.getElementById("ponies").style.display="block"'>
+        Show
+      </button>
+      <button onClick='document.getElementById("ponies").style.display="none"'>
+        Remove
+      </button>
+      <button onclick="imgSize()">Large Image</button>
+    </div>
+
+    <img
+      src="images/horse-5664955_1280.jpg"
+      alt="horse"
+      id="ponies"
+      class="center"
+    />
+    <div class="txtBtn">
+      <button type="button" onclick="changeTxt3()">Quote 1</button>
+      <button type="button" onclick="changeTxt()">Quote 2</button>
+      <button type="button" onclick="changeTxt2()">Quote 3</button>
+      <button type="button" onclick="txtColor()">Font Color</button>
+    </div>
+
+    <p id="change"></p>
+    <script>
+      document.getElementById("change").innerHTML =
+        "“A good rider can hear his horse speak to him. A great rider can hear his horse whisper.” -- Anonymous --";
+    </script>
+  </body>
+</html>
